@@ -54,7 +54,7 @@ const Navbar = ()=>{
        title="Create Your Course">
         
         <NavLink to="/teacherhome" activeClassName="teacherActive"
-         className="nav-link teachLink">Teach on Shelp</NavLink>
+         className="nav-link teachLink">Teach on EdTech</NavLink>
       </li>
     
      
@@ -62,6 +62,13 @@ const Navbar = ()=>{
         <NavLink to="/Cart" className="nav-link "> 
         <i data-toggle="tooltip" data-placement="top" title="Bookmarked Courses"
          className="fa fa-book" aria-hidden="true"><span id="bookmarkNav"> Bookmark</span></i></NavLink>
+       
+      </li>
+
+      <li className="nav-item">
+        <NavLink to="/feed" className="nav-link "> 
+        <i data-toggle="tooltip" data-placement="top" title="Ask Doubts"
+         className="fa fa-book" aria-hidden="true"><span id="bookmarkNav"> Ask Doubts</span></i></NavLink>
        
       </li>
 
