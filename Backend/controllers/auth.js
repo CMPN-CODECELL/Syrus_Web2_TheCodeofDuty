@@ -336,7 +336,7 @@ exports.resetPassword = (req,res,next)=>{
             transporter.sendMail({
                 to:email,
                 from:"varun.motiyani14@gmail.com",
-                subject:"Reset Password for shelp",
+                subject:"Reset Password for EdTech",
                 html:` '<h1>this is your otp to reset your password: ${otp}</h1>'`
             })
             console.log("mail sent  ",otp)

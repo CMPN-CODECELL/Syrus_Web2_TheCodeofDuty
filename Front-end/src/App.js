@@ -17,6 +17,7 @@ import CoursePage from './Pages/CoursePage/CoursePage';
 import Preference from './Pages/HomePage/Preference';
 import Stripe from './Pages/payment/StripeContainer';
 import Chat from './Pages/Chat/Chat';
+import App2 from './components/Feed/App2.jsx'
 
 
 class App extends Component {
@@ -39,6 +40,7 @@ class App extends Component {
         <Route path="/forgotpasswordemail"  component={ EmailVerify}/>
         <Route path='/ForgotPasswordotp' component={ForgotPasswordotp}/>
         <Route path="/ResetPassword" component= {ResetPassword}/>
+        <Route path="/feed" component={App2}/>
 
         <Route path="/home/:CourseName" exact    render={props =>
         <Homepage key={props.location.pathname} {...props}/>}/>
