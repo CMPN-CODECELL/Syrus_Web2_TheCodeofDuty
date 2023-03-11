@@ -10,8 +10,8 @@ const mainPage = (props)=> {
     if(props.shelp){
             
             shelp = (<>
-                        <br/><span className="heading-3">S-</span>
-                        <span className="heading-4">HELP</span>
+                        <br/><span className="heading-3">Ed</span>
+                        <span className="heading-4">Tech</span>
                     </>); 
 
                   }

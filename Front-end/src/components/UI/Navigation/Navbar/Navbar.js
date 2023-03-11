@@ -111,8 +111,8 @@ const Navbar = ()=>{
 
                       <NavLink  className="dropdown-item" to='/home/all' activeClassName="active-categoryMenu" >All Courses</NavLink>
                       <NavLink className="dropdown-item" to='/home/Web Development' activeClassName="active-categoryMenu">Web Development </NavLink>
-                      <NavLink className="dropdown-item" to='/home/Web Designing' activeClassName="active-categoryMenu" >Web Designing </NavLink>
-                      <NavLink className="dropdown-item" to='/home/React' activeClassName="active-categoryMenu">React</NavLink>
+                      <NavLink className="dropdown-item" to='/home/Mathematics' activeClassName="active-categoryMenu" >Mathematics </NavLink>
+                      <NavLink className="dropdown-item" to='/home/Science' activeClassName="active-categoryMenu">Science</NavLink>
                       <NavLink className="dropdown-item" to='/home/NodeJs' activeClassName="active-categoryMenu">NodeJs</NavLink>
                       <NavLink className="dropdown-item" to='/home/ML' activeClassName="active-categoryMenu">Machine Learning </NavLink>
                       <NavLink className="dropdown-item" to='/home/Photography' activeClassName="active-categoryMenu">Photography</NavLink>

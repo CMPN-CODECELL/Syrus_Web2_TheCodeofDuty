@@ -4,7 +4,7 @@ import { Link, useHistory, useLocation } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import decode from 'jwt-decode';
 
-import logo from '../../images/newlogo.png'
+import logo from '../../images/logo.jpeg'
 import * as actionType from '../../constants/actionTypes';
 import useStyles from './styles';
 
@@ -53,9 +53,9 @@ const Navbar = () => {
         {/* <h1 className={classes.logo}>WeatherGuardian</h1> */}
       </Link>
       <Toolbar className={classes.toolbar}>
-      <Button aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick} className={classes.link}>
+      {/* <Button aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick} className={classes.link}>
           Dashboard
-        </Button>
+        </Button> */}
         <Menu
           id="simple-menu"
           anchorEl={anchorEl}

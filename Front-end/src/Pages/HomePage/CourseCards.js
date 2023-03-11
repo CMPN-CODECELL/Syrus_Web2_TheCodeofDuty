@@ -1,9 +1,25 @@
 import React from "react";
 import './CSS/CategoriesCard.css';
 import Rating from '../CoursePage/Rating';
+import { useState } from "react";
 
 const CourseCards =(props)=>{
+  const [isSpeaking, setIsSpeaking] = useState(false);
+
+  const handleSpeak = () => {
+    const utterance = new SpeechSynthesisUtterance();
+    const elements = document.querySelectorAll('p, h1, h2, h3, h4, h5, h6');
+    const texts = Array.from(elements).map((el) => el.textContent);
+    const text = texts.join(' ');
+    utterance.text = text;
+    speechSynthesis.speak(utterance);
+    setIsSpeaking(true);
+    utterance.onend = () => setIsSpeaking(false);
+  };
+  
     return(
+
+      <div>
 
               <div className="Course-Cards">                
                       <div className="my-card">
@@ -21,6 +37,10 @@ const CourseCards =(props)=>{
                             <span className="Course-Price">₹ {props.price}</span>
                           </p>
                       </div>
+               </div>
+               <button disabled={isSpeaking} onClick={handleSpeak}>
+        {isSpeaking ? 'Speaking...' : 'Speak'}
+      </button>
                </div>
       );
 
